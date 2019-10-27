@@ -262,7 +262,7 @@ LinkedList.prototype.map = function (MyFunction) {
     const newList = new LinkedList();
     let Noda = this.root;
     let i = 0;
-    while (Noda.next && Noda.next != null) {
+    while (Noda.next) {
         Noda = Noda.next;
         newList.push(MyFunction(Noda.el, i, LinkedList));
         i++;
